@@ -100,19 +100,13 @@ I assume that the left lane will always be at an angle &theta; between 90&deg; a
 </div>
 
 #### 7, 8. Smooth lane lines across video frames
-For videos, to prevent the lane lines from jumping around on frames that don't process correctly, I start by taking the median angle and ymax-intercept of the left and right lanes for the first 5 frames, and using these parameters to draw the lane lines for the first frame. Then on subsequent frames I compute the new angle and ymax-intercept for the frame, and move the values from the previous frame towards the new values, but limit the change so that the new angle is no more than 1&deg; from the previous angle, and the new ymax-intercept is no more than 1 pixel from the previous ymax-intercept. This produces results like below:
+For videos, to prevent the lane lines from jumping around on frames that don't process correctly, I start by taking the median angle and ymax-intercept of the left and right lanes for the first 5 frames, and using these parameters to draw the lane lines for the first frame. Then on subsequent frames I compute the new angle and ymax-intercept for the frame, and move the values from the previous frame towards the new values, but limit the change so that the new angle is no more than 1&deg; from the previous angle, and the new ymax-intercept is no more than 1 pixel from the previous ymax-intercept. This produces results like below (click images to view on YouTube):
 
-<video width="600" controls>
-<source src="writeup_files/solidWhiteRight.mp4">
-</video>
-<br>
-<video width="600" controls>
-<source src="writeup_files/solidYellowLeft.mp4">
-</video>
-<br>
-<video width="600" controls>
-<source src="writeup_files/challenge.mp4">
-</video>
+[![solidWhiteRight.mp4](https://img.youtube.com/vi/Wy1G4L8bPqA/0.jpg)](https://youtu.be/Wy1G4L8bPqA)
+
+[![solidYellowLeft.mp4](https://img.youtube.com/vi/2kG_gYXrUo0/0.jpg)](https://youtu.be/2kG_gYXrUo0)
+
+[![challenge.mp4](https://img.youtube.com/vi/1ySA8MMRC9c/0.jpg)](https://youtu.be/1ySA8MMRC9c)
 
 ### Identify potential shortcomings with your current pipeline
 
