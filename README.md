@@ -2,6 +2,8 @@
 
 This is my submission for the first project of the [Udacity self-driving car nanodegree](http://www.udacity.com/drive). In the first project, students are asked to create a Python program that uses OpenCV to identify lane lines in still images and videos taken from a camera mounted on the front of a car that is driving on a highway.  Below is a write-up of my work.
 
+[Here is the Jupyter Notebook with the code I wrote for this project.](https://github.com/kerrickstaley/CarND-LaneLines-P1/blob/master/P1.ipynb)
+
 ## Reflection
 
 ### Describe your pipeline.
